@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CRUD PHP</title>
         <script type="text/javascript" src="script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     </head>
     <body>
@@ -47,15 +46,15 @@
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
                     <div class="form-group">
                         <label>Nome: </label>
-                        <input type="text" class="form-control" name="nome" placeholder="Ex: Henrique Cavalli" value="<?php echo $nome ?>">
+                        <input type="text" class="form-control" name="nome" required placeholder="Ex: Henrique Cavalli" value="<?php echo $nome ?>">
                     </div>
                     <div class="form-group">
                         <label>Email: </label>
-                        <input type="email" class="form-control" name="email" placeholder="Ex: henrique@dominio.com" value="<?php echo $email ?>">
+                        <input type="email" class="form-control" name="email" required placeholder="Ex: henrique@dominio.com" value="<?php echo $email ?>">
                     </div>
                     <div class="form-group">
                         <label>Telefone</label>
-                        <input type="tel" class="form-control" name="telefone" placeholder="Ex: 49999166216" value="<?php echo $telefone ?>">
+                        <input type="tel" class="form-control" name="telefone" required placeholder="Ex: 49999166216" value="<?php echo $telefone ?>">
                     </div>
                     <div class="text-center">
                         <?php if ($atualizar == true): ?>
